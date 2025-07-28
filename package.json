@@ -1,0 +1,48 @@
+{
+  "name": "flexflow-platform",
+  "version": "1.0.0",
+  "description": "FlexFlow - Multi-sided Transport Platform with flexible solutions",
+  "private": true,
+  "workspaces": [
+    "backend/*",
+    "frontend/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "format": "prettier --write .",
+    "clean": "rm -rf node_modules */node_modules */*/node_modules",
+    "prepare": "echo 'Skipping husky install for now'"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "prettier": "^3.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flexflow/platform.git"
+  },
+  "keywords": [
+    "transport",
+    "taxi",
+    "delivery",
+    "drone",
+    "ride-sharing",
+    "multi-sided-platform",
+    "microservices"
+  ],
+  "author": "FlexFlow Team",
+  "license": "MIT"
+}

@@ -1,0 +1,220 @@
+name: FlexFlow Customer Web - Test Suite
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'frontend/customer-web/**'
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'frontend/customer-web/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+    
+    defaults:
+      run:
+        working-directory: frontend/customer-web
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+        cache-dependency-path: frontend/customer-web/package-lock.json
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Run TypeScript type checking
+      run: npm run typecheck
+    
+    - name: Run ESLint
+      run: npm run lint
+    
+    - name: Run tests with coverage
+      run: npm run test:ci
+    
+    - name: Check coverage thresholds
+      run: |
+        if [ -f "coverage/coverage-summary.json" ]; then
+          echo "Coverage Summary:"
+          cat coverage/coverage-summary.json | jq '.total.lines.pct, .total.branches.pct, .total.functions.pct, .total.statements.pct'
+          
+          # Extract coverage percentages
+          lines_pct=$(cat coverage/coverage-summary.json | jq '.total.lines.pct')
+          branches_pct=$(cat coverage/coverage-summary.json | jq '.total.branches.pct')
+          functions_pct=$(cat coverage/coverage-summary.json | jq '.total.functions.pct')
+          statements_pct=$(cat coverage/coverage-summary.json | jq '.total.statements.pct')
+          
+          echo "Lines: ${lines_pct}%"
+          echo "Branches: ${branches_pct}%"
+          echo "Functions: ${functions_pct}%"
+          echo "Statements: ${statements_pct}%"
+          
+          # Check if coverage meets minimum threshold (70%)
+          if (( $(echo "${lines_pct} < 70" | bc -l) )); then
+            echo "❌ Line coverage (${lines_pct}%) is below 70% threshold"
+            exit 1
+          fi
+          
+          if (( $(echo "${branches_pct} < 70" | bc -l) )); then
+            echo "❌ Branch coverage (${branches_pct}%) is below 70% threshold"
+            exit 1
+          fi
+          
+          if (( $(echo "${functions_pct} < 70" | bc -l) )); then
+            echo "❌ Function coverage (${functions_pct}%) is below 70% threshold"
+            exit 1
+          fi
+          
+          if (( $(echo "${statements_pct} < 70" | bc -l) )); then
+            echo "❌ Statement coverage (${statements_pct}%) is below 70% threshold"
+            exit 1
+          fi
+          
+          echo "✅ All coverage thresholds met!"
+        else
+          echo "❌ Coverage report not found"
+          exit 1
+        fi
+    
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        directory: frontend/customer-web/coverage
+        flags: customer-web
+        name: customer-web-coverage
+        fail_ci_if_error: false
+    
+    - name: Generate test report
+      if: always()
+      run: |
+        echo "# Test Report" > test-report.md
+        echo "" >> test-report.md
+        echo "**Node.js Version:** ${{ matrix.node-version }}" >> test-report.md
+        echo "**Timestamp:** $(date)" >> test-report.md
+        echo "" >> test-report.md
+        
+        if [ -f "coverage/coverage-summary.json" ]; then
+          echo "## Coverage Summary" >> test-report.md
+          echo "" >> test-report.md
+          lines_pct=$(cat coverage/coverage-summary.json | jq -r '.total.lines.pct')
+          branches_pct=$(cat coverage/coverage-summary.json | jq -r '.total.branches.pct')
+          functions_pct=$(cat coverage/coverage-summary.json | jq -r '.total.functions.pct')
+          statements_pct=$(cat coverage/coverage-summary.json | jq -r '.total.statements.pct')
+          
+          echo "| Metric | Coverage |" >> test-report.md
+          echo "|--------|----------|" >> test-report.md
+          echo "| Lines | ${lines_pct}% |" >> test-report.md
+          echo "| Branches | ${branches_pct}% |" >> test-report.md
+          echo "| Functions | ${functions_pct}% |" >> test-report.md
+          echo "| Statements | ${statements_pct}% |" >> test-report.md
+        fi
+        
+        echo "" >> test-report.md
+        echo "## Test Files" >> test-report.md
+        echo "" >> test-report.md
+        find . -name "*.test.tsx" -o -name "*.test.ts" | sort >> test-report.md
+    
+    - name: Upload test report
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-report-node-${{ matrix.node-version }}
+        path: frontend/customer-web/test-report.md
+    
+    - name: Upload coverage report
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report-node-${{ matrix.node-version }}
+        path: frontend/customer-web/coverage/
+
+  security-scan:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend/customer-web
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+        cache-dependency-path: frontend/customer-web/package-lock.json
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Run security audit
+      run: npm audit --audit-level moderate
+    
+    - name: Check for known vulnerabilities
+      run: |
+        if npm audit --audit-level high --json | jq '.vulnerabilities | length' | grep -q '^0$'; then
+          echo "✅ No high-severity vulnerabilities found"
+        else
+          echo "❌ High-severity vulnerabilities detected"
+          npm audit --audit-level high
+          exit 1
+        fi
+
+  build-test:
+    runs-on: ubuntu-latest
+    needs: [test]
+    defaults:
+      run:
+        working-directory: frontend/customer-web
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'npm'
+        cache-dependency-path: frontend/customer-web/package-lock.json
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Build application
+      run: npm run build
+    
+    - name: Check build size
+      run: |
+        if [ -d ".next" ]; then
+          echo "✅ Build completed successfully"
+          
+          # Check if build artifacts exist
+          if [ -f ".next/build-manifest.json" ]; then
+            echo "📦 Build artifacts generated"
+          else
+            echo "❌ Build artifacts missing"
+            exit 1
+          fi
+          
+          # Basic size check (warn if too large)
+          build_size=$(du -sh .next | cut -f1)
+          echo "📊 Build size: $build_size"
+        else
+          echo "❌ Build directory not found"
+          exit 1
+        fi

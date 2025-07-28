@@ -1,0 +1,553 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "submit": "Submit",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "apply": "Apply",
+    "reset": "Reset",
+    "refresh": "Refresh",
+    "retry": "Retry",
+    "help": "Help",
+    "contact": "Contact",
+    "support": "Support",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register",
+    "signup": "Sign Up",
+    "signin": "Sign In",
+    "welcome": "Welcome",
+    "hello": "Hello",
+    "goodbye": "Goodbye",
+    "thankyou": "Thank you",
+    "please": "Please",
+    "yes": "Yes",
+    "no": "No",
+    "maybe": "Maybe",
+    "na": "N/A",
+    "none": "None",
+    "all": "All",
+    "any": "Any",
+    "other": "Other",
+    "select": "Select",
+    "choose": "Choose",
+    "pick": "Pick",
+    "add": "Add",
+    "remove": "Remove",
+    "update": "Update",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "download": "Download",
+    "upload": "Upload",
+    "share": "Share",
+    "copy": "Copy",
+    "paste": "Paste",
+    "cut": "Cut",
+    "undo": "Undo",
+    "redo": "Redo",
+    "print": "Print",
+    "export": "Export",
+    "import": "Import"
+  },
+  "navigation": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "services": "Services",
+    "booking": "Booking",
+    "history": "History",
+    "wallet": "Wallet",
+    "rewards": "Rewards",
+    "referrals": "Referrals",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "account": "Account",
+    "subscription": "Subscription",
+    "billing": "Billing",
+    "addresses": "Addresses",
+    "emergency": "Emergency",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "about": "About",
+    "faq": "FAQ"
+  },
+  "services": {
+    "taxi": "Taxi",
+    "rideshare": "Ride Share",
+    "rental": "Car Rental",
+    "delivery": "Delivery",
+    "food": "Food Delivery",
+    "package": "Package Delivery",
+    "drone": "Drone Delivery",
+    "grocery": "Grocery",
+    "pharmacy": "Pharmacy",
+    "shopping": "Shopping",
+    "quickcommerce": "Quick Commerce"
+  },
+  "subscription": {
+    "tiers": {
+      "basic": "Basic",
+      "silver": "Silver",
+      "gold": "Gold"
+    },
+    "benefits": {
+      "basic": {
+        "title": "Basic Plan",
+        "description": "Essential features for everyday transportation",
+        "features": [
+          "Standard ride booking",
+          "Basic delivery services",
+          "60-second free cancellation",
+          "Standard customer support",
+          "Mobile app access"
+        ]
+      },
+      "silver": {
+        "title": "Silver Plan",
+        "description": "Enhanced features with drone delivery access",
+        "features": [
+          "All Basic features",
+          "Drone delivery access",
+          "5-minute free cancellation",
+          "Priority booking",
+          "Extended customer support",
+          "Exclusive offers"
+        ]
+      },
+      "gold": {
+        "title": "Gold Plan",
+        "description": "Premium experience with exclusive ride sharing",
+        "features": [
+          "All Silver features",
+          "Exclusive ride sharing (30-40% savings)",
+          "15-minute free cancellation",
+          "Concierge support",
+          "Premium vehicle access",
+          "VIP treatment",
+          "Early feature access"
+        ]
+      }
+    }
+  },
+  "auth": {
+    "welcome": {
+      "title": "Welcome to FlexFlow",
+      "subtitle": "Flexibility in Motion",
+      "description": "Your all-in-one transportation platform"
+    },
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Welcome back to FlexFlow",
+      "email": "Email Address",
+      "password": "Password",
+      "remember": "Remember me",
+      "forgot": "Forgot password?",
+      "submit": "Sign In",
+      "divider": "Or sign in with",
+      "signup": "Don't have an account? Sign up",
+      "google": "Continue with Google",
+      "facebook": "Continue with Facebook",
+      "apple": "Continue with Apple"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join FlexFlow today",
+      "firstname": "First Name",
+      "lastname": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "password": "Password",
+      "confirmpassword": "Confirm Password",
+      "terms": "I agree to the Terms of Service and Privacy Policy",
+      "marketing": "I want to receive promotional emails",
+      "submit": "Create Account",
+      "signin": "Already have an account? Sign in"
+    },
+    "forgotpassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your email to receive reset instructions",
+      "email": "Email Address",
+      "submit": "Send Reset Link",
+      "back": "Back to Sign In"
+    },
+    "verification": {
+      "title": "Verify Your Account",
+      "subtitle": "Enter the verification code sent to your email",
+      "code": "Verification Code",
+      "submit": "Verify",
+      "resend": "Resend code",
+      "change": "Change email address"
+    }
+  },
+  "dashboard": {
+    "quickActions": "Quick Actions",
+    "recentActivity": "Recent Activity",
+    "welcome": {
+      "title": "Welcome back, {{name}}",
+      "message": "Ready to experience flexibility in motion? Your {{tier}} membership gives you access to our comprehensive transportation platform.",
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening",
+      "night": "Good night"
+    },
+    "quickActions": "Quick Actions",
+    "recentActivity": "Recent Activity",
+    "currentTier": "Current Plan",
+    "usage": "Usage This Month",
+    "savings": "Total Savings",
+    "points": "Reward Points"
+  },
+  "booking": {
+    "selectService": "Select Service",
+    "selectVehicle": "Select Vehicle",
+    "pickupLocation": "Pickup Location",
+    "dropoffLocation": "Drop-off Location",
+    "scheduledTime": "Scheduled Time",
+    "bookNow": "Book Now",
+    "scheduleRide": "Schedule Ride",
+    "estimatedFare": "Estimated Fare",
+    "estimatedTime": "Estimated Time",
+    "distance": "Distance",
+    "passengers": "Passengers",
+    "luggage": "Luggage",
+    "specialRequests": "Special Requests",
+    "paymentMethod": "Payment Method",
+    "promoCode": "Promo Code",
+    "bookingConfirmed": "Booking Confirmed",
+    "driverAssigned": "Driver Assigned",
+    "arriving": "Arriving",
+    "onTheWay": "On the Way",
+    "completed": "Completed"
+  },
+  "rideshare": {
+    "title": "Ride Share",
+    "subtitle": "Share your ride, save money",
+    "goldExclusive": "Gold Tier Exclusive",
+    "savings": "Save 30-40% on shared rides",
+    "findingMatch": "Finding your ride match...",
+    "matchFound": "Match found!",
+    "preferences": "Ride Preferences",
+    "gender": "Gender Preference",
+    "age": "Age Group",
+    "rating": "Minimum Rating",
+    "smoking": "Smoking",
+    "pets": "Pets",
+    "music": "Music",
+    "conversation": "Conversation",
+    "passengers": "Fellow Passengers",
+    "costSplit": "Cost Split",
+    "yourShare": "Your Share",
+    "originalFare": "Original Fare",
+    "savings": "You Save"
+  },
+  "tracking": {
+    "liveTracking": "Live Tracking",
+    "driverDetails": "Driver Details",
+    "vehicleInfo": "Vehicle Information",
+    "eta": "Estimated Arrival",
+    "distance": "Distance",
+    "route": "Route",
+    "chat": "Chat with Driver",
+    "call": "Call Driver",
+    "share": "Share Trip",
+    "emergency": "Emergency",
+    "arrived": "Driver has arrived",
+    "pickedUp": "Picked up",
+    "inTransit": "In transit",
+    "dropped": "Dropped off",
+    "completed": "Trip completed"
+  },
+  "errors": {
+    "network": "Network error. Please check your connection.",
+    "server": "Server error. Please try again later.",
+    "validation": "Please check your input and try again.",
+    "unauthorized": "You are not authorized to perform this action.",
+    "notFound": "The requested resource was not found.",
+    "timeout": "Request timeout. Please try again.",
+    "generic": "Something went wrong. Please try again."
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Please enter a valid email address",
+    "phone": "Please enter a valid phone number",
+    "password": "Password must be at least 8 characters",
+    "passwordMatch": "Passwords do not match",
+    "minLength": "Must be at least {{min}} characters",
+    "maxLength": "Must be no more than {{max}} characters",
+    "numeric": "Must be a number",
+    "positive": "Must be a positive number",
+    "integer": "Must be a whole number",
+    "url": "Must be a valid URL",
+    "date": "Must be a valid date",
+    "future": "Must be a future date",
+    "past": "Must be a past date"
+  },
+  "time": {
+    "now": "Now",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "yesterday": "Yesterday",
+    "thisWeek": "This Week",
+    "nextWeek": "Next Week",
+    "lastWeek": "Last Week",
+    "thisMonth": "This Month",
+    "nextMonth": "Next Month",
+    "lastMonth": "Last Month",
+    "morning": "Morning",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "night": "Night",
+    "minute": "minute",
+    "minutes": "minutes",
+    "hour": "hour",
+    "hours": "hours",
+    "day": "day",
+    "days": "days",
+    "week": "week",
+    "weeks": "weeks",
+    "month": "month",
+    "months": "months",
+    "year": "year",
+    "years": "years",
+    "ago": "ago",
+    "remaining": "remaining"
+  },
+  "language": {
+    "selector": {
+      "title": "Select Language",
+      "current": "Current language: {{language}}",
+      "change": "Change Language"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "dashboard": "Dashboard",
+    "myRides": "My Rides",
+    "foodDelivery": "Food Delivery",
+    "packages": "Packages",
+    "carRental": "Car Rental",
+    "orderHistory": "Order History",
+    "rideShare": "Ride Share",
+    "droneDelivery": "Drone Delivery",
+    "myProfile": "My Profile",
+    "billingPlans": "Billing & Plans",
+    "signOut": "Sign Out"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Welcome to FlexFlow",
+      "subtitle": "Flexibility in Motion",
+      "description": "Your all-in-one transportation platform offering taxi services, ride sharing, car rentals, and premium delivery services including drone delivery. Experience the future of flexible transportation.",
+      "getStarted": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "services": {
+      "title": "Our Services",
+      "explore": "Explore Service",
+      "taxi": {
+        "title": "🚕 Taxi & Rides",
+        "description": "On-demand transportation with professional drivers. Quick, reliable, and available 24/7."
+      },
+      "rideshare": {
+        "title": "🤝 Ride Sharing",
+        "description": "Save 30-40% by sharing rides with verified passengers. Exclusive to Gold members."
+      },
+      "rental": {
+        "title": "🚗 Car Rental",
+        "description": "Flexible car rentals by the hour, day, or week. Perfect for longer trips and adventures."
+      },
+      "food": {
+        "title": "🍕 Food Delivery",
+        "description": "Delicious meals from your favorite restaurants delivered hot and fresh to your door."
+      },
+      "packages": {
+        "title": "📦 Package Delivery",
+        "description": "Secure package delivery with real-time tracking. Same-day delivery available."
+      },
+      "drone": {
+        "title": "🛸 Drone Delivery",
+        "description": "Ultra-fast aerial delivery for urgent items. Premium feature for Silver/Gold members."
+      }
+    },
+    "plans": {
+      "title": "Choose Your Plan",
+      "chooseBasic": "Choose Basic",
+      "chooseSilver": "Choose Silver", 
+      "chooseGold": "Choose Gold"
+    },
+    "cta": {
+      "title": "Ready to Experience FlexFlow?",
+      "description": "Join thousands of satisfied customers who have made FlexFlow their go-to transportation platform. Start your journey today.",
+      "signUp": "Sign Up Now",
+      "downloadApp": "Download App"
+    }
+  },
+  "services": {
+    "rides": {
+      "title": "Book a Ride",
+      "subtitle": "Choose your destination and vehicle type for a comfortable journey",
+      "pickupLocation": "Pickup Location",
+      "destination": "Destination",
+      "pickupPlaceholder": "Enter pickup address or use current location",
+      "destinationPlaceholder": "Where would you like to go?",
+      "rideShareTitle": "🤝 Gold Member Exclusive: Ride Sharing",
+      "rideShareDescription": "Save 30-40% by sharing your ride with fellow Gold members",
+      "enableRideShare": "Enable Ride Sharing",
+      "estimatedTotal": "Estimated total:",
+      "savingMessage": "🎉 You're saving with Ride Share!",
+      "bookNow": "Book Ride Now",
+      "scheduleLater": "Schedule for Later",
+      "vehicleTypes": {
+        "economy": {
+          "name": "Economy",
+          "description": "Budget-friendly rides",
+          "capacity": "4 passengers",
+          "features": "Standard comfort"
+        },
+        "comfort": {
+          "name": "Comfort",
+          "description": "Enhanced comfort",
+          "capacity": "4 passengers", 
+          "features": "Premium vehicles"
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "Luxury experience",
+          "capacity": "4 passengers",
+          "features": "Luxury vehicles"
+        },
+        "xl": {
+          "name": "XL",
+          "description": "Extra space",
+          "capacity": "6 passengers",
+          "features": "Large vehicles"
+        }
+      }
+    },
+    "food": {
+      "title": "Food Delivery",
+      "subtitle": "Delicious meals delivered to your doorstep from your favorite restaurants",
+      "deliveryAddress": "Delivery Address",
+      "deliveryPlaceholder": "Enter your delivery address",
+      "droneUpgrade": "Upgrade to Silver/Gold for drone delivery",
+      "noRestaurants": "No restaurants found",
+      "noRestaurantsMessage": "Try selecting a different category or check back later for new options.",
+      "categories": {
+        "all": "All",
+        "pizza": "Pizza",
+        "burger": "Burgers", 
+        "asian": "Asian",
+        "healthy": "Healthy",
+        "dessert": "Desserts"
+      },
+      "deliveryTypes": {
+        "standard": {
+          "name": "Standard Delivery",
+          "time": "30-45 min",
+          "price": "Free"
+        },
+        "express": {
+          "name": "Express Delivery", 
+          "time": "15-25 min",
+          "price": "$2.99"
+        },
+        "drone": {
+          "name": "Drone Delivery",
+          "time": "10-15 min",
+          "price": "$4.99"
+        }
+      }
+    },
+    "packages": {
+      "title": "Package Delivery",
+      "subtitle": "Send packages safely and quickly with real-time tracking"
+    },
+    "rental": {
+      "title": "Car Rental", 
+      "subtitle": "Rent a vehicle for hours, days, or longer periods"
+    }
+  },
+  "forms": {
+    "validation": {
+      "fillAllFields": "Please fill in all fields and select a vehicle type",
+      "invalidEmailPassword": "Invalid email or password",
+      "loginFailed": "Login failed. Please try again.",
+      "loginSuccess": "Login successful! Redirecting..."
+    }
+  },
+  "alerts": {
+    "rideBooked": "Ride booked successfully! Driver will be assigned shortly.",
+    "upgradeForDrone": "Upgrade to Silver or Gold to access drone delivery!",
+    "upgradeForRideShare": "Upgrade to Gold membership to access ride sharing and save 30-40%!"
+  },
+  "about": {
+    "hero": {
+      "title": "About FlexFlow",
+      "description": "Revolutionizing transportation with flexibility in motion. We're building the future of mobility through innovative technology, sustainable practices, and exceptional service."
+    },
+    "features": {
+      "title": "Why Choose FlexFlow?",
+      "innovation": {
+        "title": "Innovation First",
+        "description": "Cutting-edge technology including drone delivery and AI-powered matching for the best transportation experience."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "description": "Committed to reducing carbon emissions through ride sharing, electric vehicles, and eco-friendly delivery options."
+      },
+      "community": {
+        "title": "Community Focused",
+        "description": "Building stronger communities by connecting people and supporting local businesses through our platform."
+      },
+      "safety": {
+        "title": "Safety & Security",
+        "description": "Your safety is our priority with verified drivers, real-time tracking, and 24/7 customer support."
+      },
+      "premium": {
+        "title": "Premium Experience",
+        "description": "Flexible subscription tiers offering enhanced features, priority support, and exclusive services."
+      },
+      "speed": {
+        "title": "Speed & Reliability",
+        "description": "Fast response times, reliable service, and innovative solutions like drone delivery for urgent needs."
+      }
+    },
+    "stats": {
+      "title": "FlexFlow by the Numbers",
+      "customers": "Happy Customers",
+      "cities": "Cities Served",
+      "support": "Support Available",
+      "uptime": "Uptime Guarantee"
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraph1": "FlexFlow was born from a simple idea: transportation should be flexible, reliable, and accessible to everyone. We started as a small team of passionate innovators who believed that technology could transform how people move through their daily lives.",
+      "paragraph2": "Today, we're proud to offer a comprehensive platform that includes everything from traditional taxi services to cutting-edge drone delivery. Our mission is to provide flexible mobility solutions that adapt to your needs, whether you're commuting to work, ordering dinner, or sending an urgent package across town.",
+      "paragraph3": "With sustainability at our core and innovation as our driver, we're building the future of transportation one ride, one delivery, and one satisfied customer at a time."
+    },
+    "cta": {
+      "title": "Ready to Experience FlexFlow?",
+      "description": "Join millions of users who trust FlexFlow for their transportation and delivery needs. Start your journey with us today.",
+      "getStarted": "Get Started Today",
+      "exploreServices": "Explore Services"
+    }
+  }
+}

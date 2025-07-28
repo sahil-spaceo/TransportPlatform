@@ -1,0 +1,375 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "submit": "Enviar",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "view": "Ver",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "clear": "Limpiar",
+    "apply": "Aplicar",
+    "reset": "Restablecer",
+    "refresh": "Actualizar",
+    "retry": "Reintentar",
+    "help": "Ayuda",
+    "contact": "Contacto",
+    "support": "Soporte",
+    "settings": "Configuración",
+    "profile": "Perfil",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "signup": "Registrarse",
+    "signin": "Iniciar sesión",
+    "welcome": "Bienvenido",
+    "hello": "Hola",
+    "goodbye": "Adiós",
+    "thankyou": "Gracias",
+    "please": "Por favor",
+    "yes": "Sí",
+    "no": "No",
+    "maybe": "Quizás",
+    "na": "N/A",
+    "none": "Ninguno",
+    "all": "Todo",
+    "any": "Cualquiera",
+    "other": "Otro",
+    "select": "Seleccionar",
+    "choose": "Elegir",
+    "pick": "Escoger",
+    "add": "Agregar",
+    "remove": "Quitar",
+    "update": "Actualizar",
+    "upgrade": "Mejorar",
+    "downgrade": "Degradar",
+    "download": "Descargar",
+    "upload": "Subir",
+    "share": "Compartir",
+    "copy": "Copiar",
+    "paste": "Pegar",
+    "cut": "Cortar",
+    "undo": "Deshacer",
+    "redo": "Rehacer",
+    "print": "Imprimir",
+    "export": "Exportar",
+    "import": "Importar"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "dashboard": "Panel",
+    "services": "Servicios",
+    "booking": "Reserva",
+    "history": "Historial",
+    "wallet": "Cartera",
+    "rewards": "Recompensas",
+    "referrals": "Referencias",
+    "notifications": "Notificaciones",
+    "messages": "Mensajes",
+    "account": "Cuenta",
+    "subscription": "Suscripción",
+    "billing": "Facturación",
+    "addresses": "Direcciones",
+    "emergency": "Emergencia",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "about": "Acerca de",
+    "faq": "FAQ"
+  },
+  "services": {
+    "taxi": "Taxi",
+    "rideshare": "Viaje Compartido",
+    "rental": "Alquiler de Auto",
+    "delivery": "Entrega",
+    "food": "Entrega de Comida",
+    "package": "Entrega de Paquetes",
+    "drone": "Entrega con Dron",
+    "grocery": "Supermercado",
+    "pharmacy": "Farmacia",
+    "shopping": "Compras",
+    "quickcommerce": "Comercio Rápido"
+  },
+  "subscription": {
+    "tiers": {
+      "basic": "Básico",
+      "silver": "Plata",
+      "gold": "Oro"
+    },
+    "benefits": {
+      "basic": {
+        "title": "Plan Básico",
+        "description": "Características esenciales para el transporte diario",
+        "features": [
+          "Reserva de viajes estándar",
+          "Servicios básicos de entrega",
+          "Cancelación gratuita de 60 segundos",
+          "Soporte al cliente estándar",
+          "Acceso a la aplicación móvil"
+        ]
+      },
+      "silver": {
+        "title": "Plan Plata",
+        "description": "Características mejoradas con acceso a entrega con dron",
+        "features": [
+          "Todas las características básicas",
+          "Acceso a entrega con dron",
+          "Cancelación gratuita de 5 minutos",
+          "Reserva prioritaria",
+          "Soporte al cliente extendido",
+          "Ofertas exclusivas"
+        ]
+      },
+      "gold": {
+        "title": "Plan Oro",
+        "description": "Experiencia premium con viajes compartidos exclusivos",
+        "features": [
+          "Todas las características Plata",
+          "Viajes compartidos exclusivos (ahorro del 30-40%)",
+          "Cancelación gratuita de 15 minutos",
+          "Soporte de conserjería",
+          "Acceso a vehículos premium",
+          "Tratamiento VIP",
+          "Acceso temprano a características"
+        ]
+      }
+    }
+  },
+  "auth": {
+    "welcome": {
+      "title": "Bienvenido a FlexFlow",
+      "subtitle": "Flexibilidad en Movimiento",
+      "description": "Tu plataforma de transporte todo en uno"
+    },
+    "login": {
+      "title": "Iniciar Sesión",
+      "subtitle": "Bienvenido de vuelta a FlexFlow",
+      "email": "Dirección de Correo",
+      "password": "Contraseña",
+      "remember": "Recordarme",
+      "forgot": "¿Olvidaste tu contraseña?",
+      "submit": "Iniciar Sesión",
+      "divider": "O inicia sesión con",
+      "signup": "¿No tienes cuenta? Regístrate",
+      "google": "Continuar con Google",
+      "facebook": "Continuar con Facebook",
+      "apple": "Continuar con Apple"
+    },
+    "register": {
+      "title": "Crear Cuenta",
+      "subtitle": "Únete a FlexFlow hoy",
+      "firstname": "Nombre",
+      "lastname": "Apellido",
+      "email": "Dirección de Correo",
+      "phone": "Número de Teléfono",
+      "password": "Contraseña",
+      "confirmpassword": "Confirmar Contraseña",
+      "terms": "Acepto los Términos de Servicio y Política de Privacidad",
+      "marketing": "Quiero recibir correos promocionales",
+      "submit": "Crear Cuenta",
+      "signin": "¿Ya tienes cuenta? Inicia sesión"
+    }
+  },
+  "dashboard": {
+    "welcome": {
+      "morning": "Buenos días",
+      "afternoon": "Buenas tardes",
+      "evening": "Buenas tardes",
+      "night": "Buenas noches"
+    },
+    "quickActions": "Acciones Rápidas",
+    "recentActivity": "Actividad Reciente",
+    "welcome": {
+      "title": "Bienvenido de vuelta, {{name}}",
+      "message": "¿Listo para experimentar flexibilidad en movimiento? Tu membresía {{tier}} te da acceso a nuestra plataforma integral de transporte.",
+      "morning": "Buenos días",
+      "afternoon": "Buenas tardes",
+      "evening": "Buenas tardes",
+      "night": "Buenas noches"
+    },
+    "currentTier": "Plan Actual",
+    "usage": "Uso Este Mes",
+    "savings": "Ahorros Totales",
+    "points": "Puntos de Recompensa"
+  },
+  "language": {
+    "selector": {
+      "title": "Seleccionar Idioma",
+      "current": "Idioma actual: {{language}}",
+      "change": "Cambiar Idioma"
+    }
+  },
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Acerca de",
+    "dashboard": "Panel",
+    "myRides": "Viajes",
+    "foodDelivery": "Comida",
+    "packages": "Paquetes",
+    "carRental": "Autos",
+    "orderHistory": "Historial",
+    "rideShare": "Compartir",
+    "droneDelivery": "Drones",
+    "myProfile": "Mi Perfil",
+    "billingPlans": "Facturación",
+    "signOut": "Salir"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Bienvenido a FlexFlow",
+      "subtitle": "Flexibilidad en Movimiento",
+      "description": "Tu plataforma de transporte todo en uno que ofrece servicios de taxi, viajes compartidos, alquiler de autos y servicios de entrega premium incluyendo entrega con drones. Experimenta el futuro del transporte flexible.",
+      "getStarted": "Comenzar",
+      "learnMore": "Saber Más"
+    },
+    "services": {
+      "title": "Nuestros Servicios",
+      "explore": "Explorar Servicio",
+      "taxi": {
+        "title": "🚕 Taxi y Viajes",
+        "description": "Transporte bajo demanda con conductores profesionales. Rápido, confiable y disponible 24/7."
+      },
+      "rideshare": {
+        "title": "🤝 Viajes Compartidos",
+        "description": "Ahorra 30-40% compartiendo viajes con pasajeros verificados. Exclusivo para miembros Gold."
+      },
+      "rental": {
+        "title": "🚗 Alquiler de Autos",
+        "description": "Alquileres flexibles por hora, día o semana. Perfecto para viajes largos y aventuras."
+      },
+      "food": {
+        "title": "🍕 Entrega de Comida",
+        "description": "Comidas deliciosas de tus restaurantes favoritos entregadas calientes y frescas a tu puerta."
+      },
+      "packages": {
+        "title": "📦 Entrega de Paquetes",
+        "description": "Entrega segura de paquetes con seguimiento en tiempo real. Entrega el mismo día disponible."
+      },
+      "drone": {
+        "title": "🛸 Entrega con Drones",
+        "description": "Entrega aérea ultra rápida para artículos urgentes. Función premium para miembros Silver/Gold."
+      }
+    },
+    "plans": {
+      "title": "Elige Tu Plan",
+      "chooseBasic": "Elegir Básico",
+      "chooseSilver": "Elegir Silver", 
+      "chooseGold": "Elegir Gold"
+    },
+    "cta": {
+      "title": "¿Listo para Experimentar FlexFlow?",
+      "description": "Únete a miles de clientes satisfechos que han hecho de FlexFlow su plataforma de transporte preferida. Comienza tu viaje hoy.",
+      "signUp": "Regístrate Ahora",
+      "downloadApp": "Descargar App"
+    }
+  },
+  "services": {
+    "rides": {
+      "title": "Reservar un Viaje",
+      "subtitle": "Elige tu destino y tipo de vehículo para un viaje cómodo",
+      "pickupLocation": "Ubicación de Recogida",
+      "destination": "Destino",
+      "pickupPlaceholder": "Ingresa dirección de recogida o usa ubicación actual",
+      "destinationPlaceholder": "¿A dónde te gustaría ir?",
+      "rideShareTitle": "🤝 Exclusivo Miembro Gold: Viajes Compartidos",
+      "rideShareDescription": "Ahorra 30-40% compartiendo tu viaje con otros miembros Gold",
+      "enableRideShare": "Habilitar Viajes Compartidos",
+      "estimatedTotal": "Total estimado:",
+      "savingMessage": "🎉 ¡Estás ahorrando con Viajes Compartidos!",
+      "bookNow": "Reservar Viaje Ahora",
+      "scheduleLater": "Programar para Después",
+      "vehicleTypes": {
+        "economy": {
+          "name": "Económico",
+          "description": "Viajes económicos",
+          "capacity": "4 pasajeros",
+          "features": "Comodidad estándar"
+        },
+        "comfort": {
+          "name": "Confort",
+          "description": "Comodidad mejorada",
+          "capacity": "4 pasajeros", 
+          "features": "Vehículos premium"
+        },
+        "premium": {
+          "name": "Premium",
+          "description": "Experiencia de lujo",
+          "capacity": "4 pasajeros",
+          "features": "Vehículos de lujo"
+        },
+        "xl": {
+          "name": "XL",
+          "description": "Espacio extra",
+          "capacity": "6 pasajeros",
+          "features": "Vehículos grandes"
+        }
+      }
+    },
+    "food": {
+      "title": "Entrega de Comida",
+      "subtitle": "Comidas deliciosas entregadas a tu puerta desde tus restaurantes favoritos",
+      "deliveryAddress": "Dirección de Entrega",
+      "deliveryPlaceholder": "Ingresa tu dirección de entrega",
+      "droneUpgrade": "Actualiza a Silver/Gold para entrega con drones",
+      "noRestaurants": "No se encontraron restaurantes",
+      "noRestaurantsMessage": "Intenta seleccionar una categoría diferente o vuelve más tarde para nuevas opciones.",
+      "categories": {
+        "all": "Todo",
+        "pizza": "Pizza",
+        "burger": "Hamburguesas", 
+        "asian": "Asiática",
+        "healthy": "Saludable",
+        "dessert": "Postres"
+      },
+      "deliveryTypes": {
+        "standard": {
+          "name": "Entrega Estándar",
+          "time": "30-45 min",
+          "price": "Gratis"
+        },
+        "express": {
+          "name": "Entrega Express", 
+          "time": "15-25 min",
+          "price": "$2.99"
+        },
+        "drone": {
+          "name": "Entrega con Drones",
+          "time": "10-15 min",
+          "price": "$4.99"
+        }
+      }
+    },
+    "packages": {
+      "title": "Entrega de Paquetes",
+      "subtitle": "Envía paquetes de forma segura y rápida con seguimiento en tiempo real"
+    },
+    "rental": {
+      "title": "Alquiler de Autos", 
+      "subtitle": "Alquila un vehículo por horas, días o períodos más largos"
+    }
+  },
+  "forms": {
+    "validation": {
+      "fillAllFields": "Por favor completa todos los campos y selecciona un tipo de vehículo",
+      "invalidEmailPassword": "Email o contraseña inválidos",
+      "loginFailed": "Error al iniciar sesión. Por favor intenta de nuevo.",
+      "loginSuccess": "¡Inicio de sesión exitoso! Redirigiendo..."
+    }
+  },
+  "alerts": {
+    "rideBooked": "¡Viaje reservado exitosamente! El conductor será asignado pronto.",
+    "upgradeForDrone": "¡Actualiza a Silver o Gold para acceder a entrega con drones!",
+    "upgradeForRideShare": "¡Actualiza a membresía Gold para acceder a viajes compartidos y ahorrar 30-40%!"
+  }
+}

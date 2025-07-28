@@ -1,0 +1,120 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "submit": "Senden",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "close": "Schließen",
+    "confirm": "Bestätigen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "view": "Ansehen",
+    "search": "Suchen",
+    "filter": "Filter",
+    "clear": "Löschen",
+    "apply": "Anwenden",
+    "reset": "Zurücksetzen",
+    "refresh": "Aktualisieren",
+    "retry": "Wiederholen",
+    "help": "Hilfe",
+    "contact": "Kontakt",
+    "support": "Support",
+    "settings": "Einstellungen",
+    "profile": "Profil",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "signup": "Registrieren",
+    "signin": "Anmelden",
+    "welcome": "Willkommen",
+    "hello": "Hallo",
+    "goodbye": "Auf Wiedersehen",
+    "thankyou": "Danke",
+    "please": "Bitte",
+    "yes": "Ja",
+    "no": "Nein"
+  },
+  "navigation": {
+    "home": "Start",
+    "dashboard": "Dashboard",
+    "services": "Services",
+    "booking": "Buchung",
+    "history": "Verlauf",
+    "wallet": "Geldbörse",
+    "rewards": "Belohnungen",
+    "referrals": "Empfehlungen",
+    "notifications": "Benachrichtigungen",
+    "messages": "Nachrichten",
+    "account": "Konto",
+    "subscription": "Abonnement",
+    "billing": "Abrechnung",
+    "addresses": "Adressen",
+    "emergency": "Notfall",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "terms": "Bedingungen",
+    "about": "Über uns",
+    "faq": "FAQ"
+  },
+  "services": {
+    "taxi": "Taxi",
+    "rideshare": "Mitfahrgelegenheit",
+    "rental": "Autovermietung",
+    "delivery": "Lieferung",
+    "food": "Essenslieferung",
+    "package": "Paketlieferung",
+    "drone": "Drohnenlieferung",
+    "grocery": "Lebensmittel",
+    "pharmacy": "Apotheke",
+    "shopping": "Einkaufen",
+    "quickcommerce": "Schneller Handel"
+  },
+  "subscription": {
+    "tiers": {
+      "basic": "Basic",
+      "silver": "Silber",
+      "gold": "Gold"
+    }
+  },
+  "auth": {
+    "welcome": {
+      "title": "Willkommen bei FlexFlow",
+      "subtitle": "Flexibilität in Bewegung",
+      "description": "Ihre All-in-One-Transportplattform"
+    },
+    "login": {
+      "title": "Anmelden",
+      "subtitle": "Willkommen zurück bei FlexFlow",
+      "email": "E-Mail-Adresse",
+      "password": "Passwort",
+      "remember": "Angemeldet bleiben",
+      "forgot": "Passwort vergessen?",
+      "submit": "Anmelden",
+      "divider": "Oder anmelden mit",
+      "signup": "Kein Konto? Registrieren",
+      "google": "Mit Google fortfahren",
+      "facebook": "Mit Facebook fortfahren",
+      "apple": "Mit Apple fortfahren"
+    }
+  },
+  "dashboard": {
+    "welcome": {
+      "morning": "Guten Morgen",
+      "afternoon": "Guten Tag",
+      "evening": "Guten Abend",
+      "night": "Gute Nacht"
+    },
+    "quickActions": "Schnellaktionen",
+    "recentActivity": "Letzte Aktivität",
+    "currentTier": "Aktueller Plan",
+    "usage": "Nutzung Diesen Monat",
+    "savings": "Gesamte Ersparnisse",
+    "points": "Belohnungspunkte"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "submit": "Soumettre",
+    "continue": "Continuer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "close": "Fermer",
+    "confirm": "Confirmer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "clear": "Effacer",
+    "apply": "Appliquer",
+    "reset": "Réinitialiser",
+    "refresh": "Actualiser",
+    "retry": "Réessayer",
+    "help": "Aide",
+    "contact": "Contact",
+    "support": "Support",
+    "settings": "Paramètres",
+    "profile": "Profil",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "register": "S'inscrire",
+    "signup": "S'inscrire",
+    "signin": "Se connecter",
+    "welcome": "Bienvenue",
+    "hello": "Bonjour",
+    "goodbye": "Au revoir",
+    "thankyou": "Merci",
+    "please": "S'il vous plaît",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "services": "Services",
+    "booking": "Réservation",
+    "history": "Historique",
+    "wallet": "Portefeuille",
+    "rewards": "Récompenses",
+    "referrals": "Parrainages",
+    "notifications": "Notifications",
+    "messages": "Messages",
+    "account": "Compte",
+    "subscription": "Abonnement",
+    "billing": "Facturation",
+    "addresses": "Adresses",
+    "emergency": "Urgence",
+    "legal": "Légal",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "about": "À propos",
+    "faq": "FAQ"
+  },
+  "services": {
+    "taxi": "Taxi",
+    "rideshare": "Covoiturage",
+    "rental": "Location de voiture",
+    "delivery": "Livraison",
+    "food": "Livraison de nourriture",
+    "package": "Livraison de colis",
+    "drone": "Livraison par drone",
+    "grocery": "Épicerie",
+    "pharmacy": "Pharmacie",
+    "shopping": "Shopping",
+    "quickcommerce": "Commerce Rapide"
+  },
+  "subscription": {
+    "tiers": {
+      "basic": "Basique",
+      "silver": "Argent",
+      "gold": "Or"
+    }
+  },
+  "auth": {
+    "welcome": {
+      "title": "Bienvenue sur FlexFlow",
+      "subtitle": "Flexibilité en Mouvement",
+      "description": "Votre plateforme de transport tout-en-un"
+    },
+    "login": {
+      "title": "Se connecter",
+      "subtitle": "Bon retour sur FlexFlow",
+      "email": "Adresse e-mail",
+      "password": "Mot de passe",
+      "remember": "Se souvenir de moi",
+      "forgot": "Mot de passe oublié ?",
+      "submit": "Se connecter",
+      "divider": "Ou se connecter avec",
+      "signup": "Pas de compte ? Inscrivez-vous",
+      "google": "Continuer avec Google",
+      "facebook": "Continuer avec Facebook",
+      "apple": "Continuer avec Apple"
+    }
+  },
+  "dashboard": {
+    "welcome": {
+      "morning": "Bonjour",
+      "afternoon": "Bon après-midi",
+      "evening": "Bonsoir",
+      "night": "Bonne nuit"
+    },
+    "quickActions": "Actions Rapides",
+    "recentActivity": "Activité Récente",
+    "currentTier": "Plan Actuel",
+    "usage": "Utilisation Ce Mois",
+    "savings": "Économies Totales",
+    "points": "Points de Récompense"
+  }
+}

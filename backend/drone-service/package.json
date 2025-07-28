@@ -1,0 +1,40 @@
+{
+  "name": "@flexflow/drone-service",
+  "version": "1.0.0",
+  "description": "FlexFlow Drone Service - Drone operations and flight management",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.0",
+    "mongoose": "^7.0.0",
+    "redis": "^4.6.0",
+    "mavlink": "^1.0.1",
+    "serialport": "^12.0.0",
+    "bull": "^4.11.0",
+    "joi": "^17.9.0",
+    "dotenv": "^16.3.1",
+    "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.0.0",
+    "@types/serialport": "^8.0.2",
+    "@types/bull": "^4.10.0",
+    "typescript": "^5.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  }
+}

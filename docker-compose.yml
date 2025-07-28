@@ -1,0 +1,114 @@
+version: '3.8'
+
+services:
+  # Database Services
+  mongodb:
+    image: mongo:7.0
+    container_name: flexflow-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: flexflow
+      MONGO_INITDB_ROOT_PASSWORD: flexflow123
+      MONGO_INITDB_DATABASE: flexflow
+    volumes:
+      - mongodb_data:/data/db
+      - ./infrastructure/docker/mongodb/init:/docker-entrypoint-initdb.d
+    networks:
+      - flexflow-network
+
+  redis:
+    image: redis:7.2-alpine
+    container_name: flexflow-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: redis-server --appendonly yes --requirepass flexflow123
+    volumes:
+      - redis_data:/data
+    networks:
+      - flexflow-network
+
+  postgresql:
+    image: postgres:15-alpine
+    container_name: flexflow-postgresql
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: flexflow_analytics
+      POSTGRES_USER: flexflow
+      POSTGRES_PASSWORD: flexflow123
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+      - ./infrastructure/docker/postgresql/init:/docker-entrypoint-initdb.d
+    networks:
+      - flexflow-network
+
+  # Backend Services
+  api-gateway:
+    build:
+      context: ./backend/api-gateway
+      dockerfile: Dockerfile
+    container_name: flexflow-api-gateway
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      NODE_ENV: development
+      PORT: 8000
+      MONGODB_URI: mongodb://flexflow:flexflow123@mongodb:27017/flexflow
+      REDIS_URI: redis://:flexflow123@redis:6379
+    depends_on:
+      - mongodb
+      - redis
+    networks:
+      - flexflow-network
+
+  auth-service:
+    build:
+      context: ./backend/auth-service
+      dockerfile: Dockerfile
+    container_name: flexflow-auth-service
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      NODE_ENV: development
+      PORT: 8001
+      MONGODB_URI: mongodb://flexflow:flexflow123@mongodb:27017/flexflow
+      REDIS_URI: redis://:flexflow123@redis:6379
+    depends_on:
+      - mongodb
+      - redis
+    networks:
+      - flexflow-network
+
+  user-service:
+    build:
+      context: ./backend/user-service
+      dockerfile: Dockerfile
+    container_name: flexflow-user-service
+    restart: unless-stopped
+    ports:
+      - "8002:8002"
+    environment:
+      NODE_ENV: development
+      PORT: 8002
+      MONGODB_URI: mongodb://flexflow:flexflow123@mongodb:27017/flexflow
+      REDIS_URI: redis://:flexflow123@redis:6379
+    depends_on:
+      - mongodb
+      - redis
+    networks:
+      - flexflow-network
+
+volumes:
+  mongodb_data:
+  redis_data:
+  postgresql_data:
+
+networks:
+  flexflow-network:
+    driver: bridge
